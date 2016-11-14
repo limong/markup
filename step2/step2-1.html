@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <style>
+        body, html {
+        }
+
+        .container {
+            position: relative;
+            width: 940px;
+            margin: 0 auto;
+        }
+
+        /*************
+        *
+        *   header
+        *
+        **************/
+        .header {
+            border: 1px solid red;
+            height: 150px;
+        }
+
+        /*************
+        *
+        *   body
+        *
+        **************/
+        .body_wrap {
+            border: 1px solid green;
+            height: 100%;
+        }
+
+        /*************
+        *
+        *   top
+        *
+        **************/
+        .body_wrap .top {
+            height: 418px;
+        }
+
+        .body_wrap .top_left {
+            float: left;
+            width: 639px;
+        }
+
+        .body_wrap .top_left {
+            height: 100%;
+            background: url("../img/2-1.png") no-repeat 0 0;
+        }
+
+        .body_wrap .top_right {
+            float: left;
+            width: 298px;
+        }
+
+        .body_wrap .top_right {
+            height: 100%;
+            background: url("../img/2-2.png") no-repeat 0 0;
+        }
+
+        /*************
+        *
+        *   middle
+        *
+        **************/
+        .body_wrap .middle {
+            height: 418px;
+        }
+
+        .body_wrap .middle_left, .middle_center {
+            float: left;
+            width: 320px;
+            height: 100px;
+        }
+
+        .body_wrap .middle_right {
+            float: right;
+            width: 296px;
+            height: 100px;
+        }
+
+        /*************
+        *
+        *   footer
+        *
+        **************/
+        .footer {
+            position: relative;
+            border: 1px solid blue;
+            height: 100px;
+            /*text-align: center;*/
+        }
+
+        .footer .footer_legal {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-25%, -25%);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        header
+    </div>
+    <div class="body_wrap">
+        <div class="top">
+            <div class="top_left"><span class="top_left_img"></span></div>
+            <div class="top_right"><span class="top_right_img"></span></div>
+        </div>
+        <div class="middle">
+            <div class="middle_left">11111111<span class="middle_left_img"></span></div>
+            <div class="middle_center">222222222<span class="middle_center_img"></span></div>
+            <div class="middle_right">33333333<span class="middle_right_img"></span></div>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer_legal">네이버 정책 및 약관 회사소개 정책네이버 고객센터© NAVER Corp.</span>
+    </div>
+</div>
+</body>
+</html>
