@@ -1,0 +1,95 @@
+<!--
+	1. 반응형으로 만들기(%로 동작)
+	2. 640px 이하일 경우 mobile view
+	3. 640px 이하일 경우 footer의 색상을 변경
+-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <style>
+        html, body {
+            height: 100%;
+            font-family: "Arimo";
+            font-size: 15px;
+        }
+
+        .container {
+            position: relative;
+            padding: 20px 15px;
+        }
+
+        .line {
+            height: 60px;
+        }
+
+        .title {
+            width: 60px;
+            padding-left: 2px;
+            float: left;
+            vertical-align: middle;
+        }
+
+        .title:after {
+            content: "*";
+            color: #aadd33;
+        }
+
+        .input {
+            float: left;
+        }
+
+        .input input {
+            height: 24px;
+            width: 350px;
+        }
+
+        .input input:focus {
+            border-color: crimson;
+        }
+
+        .input .email_err {
+            margin-top: 10px;
+            padding: 10px 10px;
+            height: 20px;
+            background-color: rgba(255, 0, 0, 0.3);
+            border: 1px solid red;
+        }
+
+        @media screen and (max-width: 500px) {
+            .input input {
+                width: 250px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .input {
+                width: 100%;
+            }
+
+            .input input {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="line">
+        <div class="name title">name</div>
+        <div class="input"><input type="text"></div>
+    </div>
+    <div class="line">
+        <div class="email title">email</div>
+        <div class="input">
+            <input type="text">
+
+            <div class="email_err">Email is required</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

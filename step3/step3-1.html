@@ -1,0 +1,118 @@
+<!--
+	1. 반응형으로 만들기(%로 동작)
+	2. 640px 이하일 경우 mobile view
+	3. 640px 이하일 경우 footer의 색상을 변경
+-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <style>
+        html, body {
+            height: 100%;
+            font-family: "Arimo";
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            color: #55595c;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .container {
+            position: relative;
+            background-color: #fefefe;
+            border: 1px solid #ececec;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .header .profile {
+            border-radius: 50%;
+        }
+
+        .header .profile_title {
+            font-size: 20px;
+            font-weight: 300;
+            padding: 9px 0;
+        }
+
+        .header .profile_text {
+            font-size: 14px;
+            color: #a0a0a0;
+            padding: 2px 0;
+        }
+
+        .header .profile_count:before {
+            content: "\e906";
+        }
+
+        .body_wrap ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .body_wrap ul li {
+            font-size: 15px;
+            border-top: 1px solid #ececec;
+        }
+
+        .body_wrap ul li:before {
+            padding-right: 13px;
+        }
+
+        .body_wrap ul li a {
+            display: block;
+            padding: 23px 28px;
+        }
+
+        .body_wrap ul li a:hover {
+            background-color: #eeeeee;
+        }
+
+        .body_wrap ul li a:before {
+            padding-right: 10px;
+        }
+
+        .body_wrap ul li.alarm a:before {
+            content: "\e903";
+        }
+
+        .body_wrap ul li.write a:before {
+            content: "\e905";
+        }
+
+        .body_wrap ul li.message a:before {
+            content: "\e904";
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div>
+            <img src="../img/sol.png" class="profile" width="80" height="80">
+        </div>
+        <div class="profile_title">BootStrap V4</div>
+        <div class="profile_text">@bootstrap</div>
+        <div class="profile_text profile_count">70</div>
+    </div>
+    <div class="body_wrap">
+        <ul class="">
+            <li class="alarm"><a href="#">Alarm</a></li>
+            <li class="write"><a href="#">Write</a></li>
+            <li class="message"><a href="#">Message</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
