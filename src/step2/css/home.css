@@ -1,0 +1,119 @@
+html, body, h1, h2, h3, h4, h5, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    border-bottom: 1px solid #8f9394;
+}
+
+header .header-wrap{
+    width: 790px;
+    margin: 0 auto;
+}
+
+header .top_header {
+    margin: 3px 10px 0;
+
+}
+
+header .logo {
+    display: inline-block;
+    background-color: #2195df;
+}
+
+header .menu {
+    float: right;
+    display: inline-block;
+    background: #00ab89;
+}
+
+header .arrow-l {
+    float: left;
+}
+
+header .arrow-r {
+    float: right;
+}
+
+header .topic_list {
+    display: inline-block;
+    width: 80%;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+header .topic_list li {
+    display: inline-block;
+}
+
+header .add-topic {
+    float: right;
+    display: inline-block;
+}
+
+.container {
+    position: relative;
+    margin: 10px auto 0;
+    width: 1093px;
+    border: 1px solid black;
+}
+
+.container div.ad-box {
+    position: absolute;
+    width: 160px;
+    height: 600px;
+    background-color:  yellowgreen;
+}
+
+.container div.ad-box.ad-box-left {
+    top:0;
+    left: 0;
+}
+
+.container div.ad-box.ad-box-right {
+    top:0;
+    right: 0;
+}
+
+.container div.content {
+    display: block;
+    margin: 0 auto;
+    width: 728px;
+    background-color:  yellowgreen;
+}
+
+.container div.content > div{
+    width: 728px;
+}
+
+.container div.content .ad-section {
+    margin-bottom: 11px;
+    height: 90px;
+    background-color:  yellowgreen;
+}
+
+.container div.content .ranking-section {
+    background-color:  #1c85fc;
+}
+
+.container div.content .ranking-section .ranking-article{
+    height: 150px;
+    background-color:  #3F51B5;
+}
+
+.container div.content .discussion-section {
+    height: 500px;
+    background-color:  #8e2b0c;
+}
+
+.container div.content .recommended-section {
+    height: 700px;
+    background-color:  #FF7043;
+}
+
+footer {
+    width: 728px;
+    margin: 0 auto;
+    background-color:  blue;
+}
