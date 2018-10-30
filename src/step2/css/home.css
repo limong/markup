@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, h5, ul, li {
+html, body, h1, h2, h3, h4, h5, ul, li, figure, figcaption, img {
     padding: 0;
     margin: 0;
 }
@@ -84,7 +84,6 @@ header .add-topic {
     display: block;
     margin: 0 auto;
     width: 728px;
-    background-color:  yellowgreen;
 }
 
 .container div.content > div{
@@ -92,18 +91,102 @@ header .add-topic {
 }
 
 .container div.content .ad-section {
-    margin-bottom: 11px;
-    height: 90px;
-    background-color:  yellowgreen;
+    margin-bottom: 16px;
 }
 
-.container div.content .ranking-section {
-    background-color:  #1c85fc;
+.container div.content .ranking-section .section-info {
+    display: none;
 }
 
-.container div.content .ranking-section .ranking-article{
-    height: 150px;
-    background-color:  #3F51B5;
+.container div.content .ranking-section .section-info .section-title {
+}
+
+.container div.content .ranking-section .section-info .section-date {
+}
+
+/**
+* ranking first article
+*/
+.container div.content .ranking-section .ranking-article .top-article figure img {
+}
+
+.container div.content .ranking-section .ranking-article .top-article figure figcaption {
+    display: none;
+}
+
+.container div.content .ranking-section .ranking-article .top-article .ranking {
+    position: relative;
+    width: 52px;
+    display: inline-block;
+}
+
+.container div.content .ranking-section .ranking-article .top-article .ranking .order{
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    width: 48px;
+    height: 47px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    background-color: #00c8a0;
+}
+
+.container div.content .ranking-section .ranking-article .top-article .article-content {
+    display: inline-block;
+}
+
+.container div.content .ranking-section .ranking-article ul li {
+    border-bottom: 1px solid #f5f6f7;
+}
+
+
+/**
+* ranking normal article
+*/
+
+.container div.content .ranking-section .ranking-article .article {
+    min-height: 85px;
+    padding: 16px;
+}
+
+.container div.content .ranking-section .ranking-article .article figure img {
+    float: right;
+}
+
+.container div.content .ranking-section .ranking-article .article figure figcaption {
+    display: none;
+}
+
+.container div.content .ranking-section .ranking-article .article .ranking {
+    width: 52px;
+    display: inline-block;
+}
+
+.container div.content .ranking-section .ranking-article .article .ranking .order{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.container div.content .ranking-section .ranking-article .article .ranking .rate {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.container div.content .ranking-section .ranking-article .article .ranking .rate.up {
+    color: red;
+}
+
+.container div.content .ranking-section .ranking-article .article .ranking .rate.down {
+    color: blue;
+}
+
+.container div.content .ranking-section .ranking-article .article .ranking .rate.down {
+    color: gray;
+}
+
+.container div.content .ranking-section .ranking-article .article .article-content {
+    display: inline-block;
 }
 
 .container div.content .discussion-section {
