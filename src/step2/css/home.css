@@ -177,35 +177,50 @@ header .add-topic {
 }
 
 .container div.content .ranking-section .ranking-article .article .ranking .rate.up {
+    background: url('../img/img-home-ranking-up.png') no-repeat left center;
+}
+
+.container div.content .ranking-section .ranking-article .article .ranking .rate .count {
     color: red;
+    margin-left: 10px;
 }
 
 .container div.content .ranking-section .ranking-article .article .ranking .rate.down {
     color: blue;
+    background: url('../img/img-home-ranking-down.png') no-repeat 10px 16px;
 }
 
-.container div.content .ranking-section .ranking-article .article .ranking .rate.down {
+.container div.content .ranking-section .ranking-article .article .ranking .rate.same {
     color: gray;
+    background: url('../img/img-home-ranking-same.png') no-repeat 10px 16px;
 }
 
 .container div.content .ranking-section .ranking-article .article .article-content {
+    width: 477px;
     display: inline-block;
 }
 
-.container div.content .recommended-section {
-    height: 700px;
-    background-color:  #FF7043;
+.container div.content .ranking-section .ranking-article .article .article-content .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3f3f3f;
 }
 
+.container div.content .ranking-section .ranking-article .article .article-content .info .comment {
+    background: url('../img/img-comment.png') no-repeat left center;
+}
+
+.container div.content .ranking-section .ranking-article .article .article-content .info .like {
+    background: url('../img/img-like.png') no-repeat left center;
+}
+
+.container div.content .ranking-section .ranking-article .article .article-content .info .count {
+    margin-left: 20px;
+}
 
 /**
 * discussion section
  */
-
-.container div.content .discussion-section {
-    height: 500px;
-    border: 1px solid #8e2b0c;
-}
 
 .container div.content .discussion-section .header {
     font-size: 16px;
@@ -238,6 +253,52 @@ header .add-topic {
     color: #babdbe;
 }
 
+.container div.content .discussion-section ul li .info {
+    height: 26px;
+    line-height: 26px;
+}
+
+.container div.content .discussion-section ul li .cp-profile {
+    float: left;
+}
+
+.container div.content .discussion-section ul li .cp-profile img {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+.container div.content .discussion-section ul li .cp-title {
+    float: left;
+    padding-left: 4px;
+    font-size: 14px;
+    color: #babdbe;
+}
+
+
+.container div.content .discussion-section ul li .info .comment-count {
+    float: right;
+    padding-left: 22px;
+    font-size: 13px;
+    color: #babdbe;
+    background: url('../img/img-comment.png') no-repeat left center;
+}
+
+.container div.content .discussion-section ul li .info .like-count {
+    float: right;
+    padding-left: 22px;
+    font-size: 13px;
+    color: #babdbe;
+    background: url('../img/img-comment.png') no-repeat left center;
+}
+
+/**
+* recommended
+ */
+.container div.content .recommended-section {
+    height: 700px;
+    background-color:  #FF7043;
+}
 
 footer {
     width: 728px;
