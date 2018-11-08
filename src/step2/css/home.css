@@ -231,7 +231,6 @@ header .add-topic {
 }
 
 .container div.content .discussion-section ul{
-    padding: 0 16px;
 }
 
 .container div.content .discussion-section ul li{
@@ -244,16 +243,18 @@ header .add-topic {
     letter-spacing: -0.3px;
     line-height: 1.13;
     color: #3f3f3f;
-    padding-bottom: 3px;
+    padding: 0 16px 3px;
 }
 
 .container div.content .discussion-section ul li .desc{
     font-size: 16px;
     line-height: 1.38;
+    padding: 0 16px;
     color: #babdbe;
 }
 
 .container div.content .discussion-section ul li .info {
+    padding: 10px 16px;
     height: 26px;
     line-height: 26px;
 }
@@ -291,6 +292,54 @@ header .add-topic {
     color: #babdbe;
     background: url('../img/img-comment.png') no-repeat left center;
 }
+
+.container div.content .discussion-section ul li figure {
+    width: 728px;
+    height: 406px;
+}
+
+.container div.content .discussion-section ul li figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container div.content .discussion-section ul li .comment-area {
+    padding: 20px 16px 24px;
+}
+
+.container div.content .discussion-section ul li .comment-area .comment-header {
+    padding-bottom: 14px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.container div.content .discussion-section ul li .comment-area .comment-list li .comment-body {
+    width: 229px;
+    height: 116px;
+    background-color: #f4f5f6;
+}
+
+.container div.content .discussion-section ul li .comment-area .comment-list li .comment-writer {
+    height: 26px;
+    padding-top: 3px;
+}
+
+.container div.content .discussion-section ul li .comment-area .comment-list li .comment-writer img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+.container div.content .discussion-section ul li .comment-area .comment-list li .comment-writer .comment-writer-name{
+    font-size: 14px;
+    color: #babdbe;
+    vertical-align: middle;
+}
+
+
+
+
 
 /**
 * recommended
