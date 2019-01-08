@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, h5, ul, ol, li, figure, figcaption, img, button {
+html, body, h1, h2, h3, h4, h5, ul, ol, li, figure, figcaption, img, button, a {
     padding: 0;
     margin: 0;
     font-family: -apple-system,system,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -122,4 +122,49 @@ header .title {
 
 .container .swipe-pagenation li.on{
     background: rgba(255,255,255,1);
+}
+
+.container .swipe-wrap {
+    padding: 19px 0;
+    border-bottom: 1px solid rgba(240,240,240,0.8);
+}
+
+.container .swipe-wrap .title {
+    position: relative;
+    margin-left: 17px;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.container .swipe-wrap .title:after {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #848a94;
+    border-right: 2px solid #848a94;
+    transform: rotate(45deg);
+}
+
+.container .swipe-wrap .swipe-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container .swipe-wrap .swipe-list .swipe-item {
+    width: 76px;
+    display: inline-block;
+    margin-left: 17px;
+}
+
+.container .swipe-wrap .swipe-list .swipe-item .swipe-item-title {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 10px;
+    white-space: normal;
 }
